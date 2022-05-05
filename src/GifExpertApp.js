@@ -1,9 +1,10 @@
 import { useState } from "react";
 import AddCategory from "./Componentes/AddCategory";
+import GifGrid from "./Componentes/GifGrid";
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Constelations', 'Universe', 'Planets'])
+    const [categories, setCategories] = useState(['Universe'])
    
 
     //const handleAdd = () => {
@@ -12,14 +13,19 @@ const GifExpertApp = () => {
 
     return ( 
         <>
-            <h2> Gif Expert App </h2>
+            <h2> GifSearchApp </h2>
             <AddCategory setCategories= { setCategories } />
             <hr />
            
             <ol>
-                {categories.map( category => {
-                    return <li key={category}> { category }</li>
-                })}
+                {
+                categories.map( category => 
+                    <GifGrid
+                    key= { category } 
+                    category={ category }
+                     />           
+                    )
+                }
             </ol> 
         </>
        
