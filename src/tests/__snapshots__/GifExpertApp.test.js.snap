@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en  <GifExpertApp /> Debe renderizarse correctamente 1`] = `
+<DocumentFragment>
+  <h2>
+     GifSearchApp 
+  </h2>
+  <form
+    name="form"
+  >
+    <input
+      type="text"
+      value=""
+    />
+  </form>
+  <hr />
+  <ol>
+    <h3
+      class="animate__animated animate__fadeIn"
+    >
+       Universe 
+    </h3>
+    <p
+      class="animate__animated animate__flash"
+      data-testid="pLoad"
+    >
+       Cargando...
+    </p>
+    <div
+      class="card-grid"
+    />
+  </ol>
+</DocumentFragment>
+`;
